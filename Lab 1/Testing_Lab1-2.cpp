@@ -44,7 +44,7 @@ int main(){
 	//name of input file
 	const string inputFile = "inputFile.txt"; 
 	//open file
-	ifstream inFile(inputFile); 
+	ifstream inFile(inputFile.c_str()); 
 	//account for errors in file opening 
 	if (!inFile)
 		cout << "Error opening file for input: " << inputFile << endl;
