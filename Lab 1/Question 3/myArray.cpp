@@ -7,7 +7,7 @@
 using namespace std;
 
 myArray::myArray(){
-	int theArray [10]; 
+	int theArray [10]; //creates an array of size 10
 }
 
 bool myArray::setNumber(int inputValue){	//DONE

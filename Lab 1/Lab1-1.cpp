@@ -8,7 +8,6 @@
 #include <string>
 #include <locale>
 
-	 
 using namespace std;
      
 int main()
