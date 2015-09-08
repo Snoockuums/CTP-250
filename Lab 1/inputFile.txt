@@ -1,0 +1,4 @@
+Hey there this is my text file for CTP 250. 
+Programming is so much fun! 
+Can I ask you a question? 
+What is your favorite color?
