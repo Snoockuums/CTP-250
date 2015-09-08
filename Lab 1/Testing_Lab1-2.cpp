@@ -57,19 +57,20 @@ int main(){
 			getline(inFile, inputSentence);
 			// read sentence
 			// output sentence
-			cout<<inputSentence<<endl;
-			// parse out individual words
-			// while not end of string:
-				// read in word
-				//inWord = appended characters? 
-				// ignore whitespace 
-			// call function on sentence to count
-			countLetters(inWord, numVowels, numCons, numOther);
-			// output counts for sentence
+			cout<<"Input String: "<<inputSentence<<endl;
+	
+			for(int i=0; i<inputSentence.length(); i++){ // iterate through each character of the line
+				if(inputSentence[i] != ' ')
+					wordBuilder += inputSentence[i];
+				else{
+					countLetters(wordBuilder, numVowels, numCons, numOther);
+					wordBuilder.clear(); // reset word builder
+				}
+			}
+			// upon for loop exit, entire sentence has been processed, so now output counts
 			cout<<numVowels<<" vowels"<<endl;
 			cout<<numCons<<" consonants"<<endl;
 			cout<<numOther<<" other"<<endl;
-
 		}
 	}
 	return 0;
