@@ -65,6 +65,9 @@ int main(){
 				else{
 					countLetters(wordBuilder, numVowels, numCons, numOther);
 					wordBuilder.clear(); // reset word builder
+					numVowels = 0;
+					numCons=0;
+					numOther=0;
 				}
 			}
 			// upon for loop exit, entire sentence has been processed, so now output counts
