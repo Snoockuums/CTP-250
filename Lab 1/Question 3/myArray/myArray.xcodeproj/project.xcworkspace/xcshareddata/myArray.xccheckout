@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A78D9AA-DFFA-44FB-902C-917B42B17EC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>myArray</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8FC36233EB1F93346FBC248EF94656689A325D0D</key>
+		<string>https://github.com/kylienic/CTP-250.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lab 1/Question 3/myArray/myArray.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8FC36233EB1F93346FBC248EF94656689A325D0D</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kylienic/CTP-250.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8FC36233EB1F93346FBC248EF94656689A325D0D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FC36233EB1F93346FBC248EF94656689A325D0D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CTP-250</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -4,16 +4,14 @@
   */
   
 #include "myArray.h"    // include the header file
+#include <iostream>
 using namespace std;
 
 myArray::myArray(){
-	int theArray [10]; //creates an array of size 10
+	 
 }
 
 bool myArray::setNumber(int inputValue){	//DONE
-	//if there is room
-	//cout
-	//cin (see lab description
 	if(numArrayValues < 10){
 		theArray[numArrayValues] = inputValue;
 		numArrayValues++;
@@ -39,7 +37,7 @@ void myArray::displayNumbers() const{	//DONE
 	}
 }
 
-void myArray::getStats(int& max, int& min, float& avg){
+void myArray::getStats(int& max, int& min, float& avg){	//i think done?
 	//find the min value in the array
 	//find the max value in the array
 	max = theArray[0];
@@ -54,8 +52,8 @@ void myArray::getStats(int& max, int& min, float& avg){
 	int sum=0;
 	for(int j=0; j<numArrayValues; j++)
 		sum += theArray[j];
-	avg = sum/numArrayValues;
-	//avg = static_cast<float>sum/numArrayValues;
+	//avg = sum/numArrayValues;
+	avg = (float)sum/numArrayValues;
 	
 }
 

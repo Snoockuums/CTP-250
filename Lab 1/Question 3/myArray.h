@@ -2,25 +2,17 @@
   * @author Kylie Nicholson
   * Defines an Array object and methods to support the object.
   */
-
-// I am not sure how to use @param and @return javadoc!!!!
-
-// @param and @return: https://students.cs.byu.edu/~cs240ta/fall2012/tutorials/javadoctutorial.html
-
 class myArray
 {
 private:
 	int arrayLength = 10;
-	int max = 0;
-	int min = 0;
-	int avg = 0; 
-	int numArrayValues = 0; 
+	int numArrayValues = 0;
+	int inputValues = 0;
+    int theArray [10];
 
 public: 
 /** 
-* Deafult constructor: Creates an array and initializes its size
-* Precondition: None.
-* Postcondition: An array with 10 values exists. 
+* Deafult constructor: Creates an array and initializes its size 
 */
 	myArray();
 
@@ -28,7 +20,9 @@ public:
 /** 
 * setNumber- Accepts and stores an integer value into the next available spot in array.
 * Returns true if there is room in the array and the integer was successfully 
-* stored.  Returns false otherwise.  
+* stored.  Returns false otherwise. 
+* @param inputValue: takes integer input
+* @return true if there is room in array and value is added; false if array is full 
 */
 	bool setNumber(int inputValue);
 
@@ -40,12 +34,15 @@ public:
 /**
 * displayNumbers Ð displays the values currently stored in the array.
 */
-	void displayNumbers();
+	void displayNumbers() const;
 
 /**
 * getStats Ð determines the largest, smallest, and average of the values currently 
 * stored in the array.  These values are returned to the caller via reference 
 * parameters.
+* @ param max: integer value passed by reference to find maximum value in array
+* @ param min: integer value passed by reference to find minimum value in array
+* @ param avg: integer value passed by reference to find average value in array
 */
 	void getStats(int& max, int& min, float& avg);
 
