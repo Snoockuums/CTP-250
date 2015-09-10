@@ -6,11 +6,11 @@ class myArray
 {
 private:
 	int arrayLength = 10;
-	int numArrayValues = 0;
-	int inputValues = 0;
+//	int inputValues = 0;
     int theArray [10];
 
-public: 
+public:
+    int numArrayValues = 0;
 /** 
 * Deafult constructor: Creates an array and initializes its size 
 */
