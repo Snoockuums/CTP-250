@@ -13,7 +13,7 @@ template<class ItemType>
 class ArrayBag : public BagInterface<ItemType>
 {
 private:
-	static const int DEFAULT_CAPACITY = 6; // Small size to test for a full bag
+	static const int DEFAULT_CAPACITY = 20; // Changed size from 6 to 20 to test new methods
 	ItemType items[DEFAULT_CAPACITY];      // Array of bag items
    int itemCount;                         // Current count of bag items 
    int maxItems;                          // Max capacity of the bag

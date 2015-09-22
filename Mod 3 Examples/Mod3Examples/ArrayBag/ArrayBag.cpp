@@ -138,6 +138,31 @@ vector<ItemType> ArrayBag<ItemType>::toVector() const
    return bagContents;
 }  // end toVector
 
+template<class ItemType>
+ArrayBag<ItemType> ArrayBag<ItemType>::bagUnion(const ArrayBag& input) const{
+	// declare a new ArrayBag that will hold the union
+	ArrayBag<ItemType> theUnion;
+	// for each entry in input, set a slot in the new ArrayBag equal to the entry and increment itemCount.
+	for(int i=0; i<input.itemCount; i++){
+		theUnion.items[i] = input.items[i];
+		cout<<"The entry in input was: "<<input.items[i]<<endl;
+		cout<<"The entry in theUnion is: "<<theUnion.items[i]<<endl;
+		theUnion.itemCount++;
+		cout<<"Union item count: "<<theUnion.itemCount<<endl;
+
+	}
+	int itemCountAfterPart1 = theUnion.itemCount;
+	// for each entry in current array, set a slot in the new ArrayBag equal to the entry and increment itemCount.
+	for(int j=0; j<itemCount; j++){
+		theUnion.items[j+itemCountAfterPart1] = items[j];
+		cout<<"The entry in caller was: "<<items[j]<<endl;
+		cout<<"The entry in theUnion is: "<<theUnion.items[j+itemCountAfterPart1]<<endl;
+		theUnion.itemCount++; 
+		cout<<"Union item count: "<<theUnion.itemCount<<endl;
+	}
+	return theUnion;
+	}
+
 // private
 template<class ItemType>
 int ArrayBag<ItemType>::getIndexOf(const ItemType& target) const

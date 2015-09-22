@@ -19,12 +19,19 @@ All done!
 */
 void displayBag(ArrayBag<string>& bag);
 void bagTester(ArrayBag<string>& bag);
+void bagTester2(ArrayBag<string>& bag);
+void unionTester(ArrayBag<string>& bag, ArrayBag<string>& bag2); 
 int main()
 {
  ArrayBag<string> bag;
+ ArrayBag<string> bag2;
  cout << "Testing the Array-Based Bag:" << endl;
  cout << "The initial bag is empty." << endl;
  bagTester(bag);
+ bagTester2(bag2);
+ ArrayBag<string> unionResult = bag.bagUnion(bag2); 
+ displayBag(unionResult);
+ //unionTester(bag, bag2);
  cout << "All done!" << endl;
 
  return 0;
@@ -42,6 +49,7 @@ void displayBag(ArrayBag<string>& bag)
  } // end for
  cout << endl << endl;
 } // end displayBag
+
 void bagTester(ArrayBag<string>& bag)
 {
  cout << "isEmpty: returns " << bag.isEmpty()
@@ -65,4 +73,38 @@ void bagTester(ArrayBag<string>& bag)
 
  cout << "Try to add another entry: add(\"extra\") returns "
  << bag.add("extra") << endl;
+ 
 } // end bagTester
+
+void bagTester2(ArrayBag<string>& bag)
+{
+ cout << "isEmpty: returns " << bag.isEmpty()
+ << "; should be 1 (true)" << endl;
+ displayBag(bag);
+
+ string items[] = {"A", "B", "C", "D", "E", "F"};
+ cout << "Add 6 items to the bag: " << endl;
+ for (int i = 0; i < 6; i++)
+ {
+ bag.add(items[i]);
+ } // end for
+
+ displayBag(bag);
+
+ cout << "isEmpty: returns " << bag.isEmpty()
+ << "; should be 0 (false)" << endl;
+
+ cout << "getCurrentSize: returns " << bag.getCurrentSize()
+ << "; should be 6" << endl;
+
+ cout << "Try to add another entry: add(\"extra\") returns "
+ << bag.add("extra") << endl;
+ 
+} // end bagTester
+
+void unionTester(ArrayBag<string>& bag, ArrayBag<string>& bag2){
+
+	bag.bagUnion(bag2); 
+	cout<<"union tester ran!";
+
+}
