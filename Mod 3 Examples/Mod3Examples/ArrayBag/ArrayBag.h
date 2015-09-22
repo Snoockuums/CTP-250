@@ -37,7 +37,11 @@ public:
 	/* Design and specify a method union for the ArrayBag that returns as a new bag the union 
 	of the bag receiving the call to the method and the bag that is the method's parameter. 
 	*/
-	ArrayBag<ItemType> bagUnion(const ArrayBag& input) const; 
+	ArrayBag<ItemType> bagUnion(const ArrayBag& input) const;
+	//Lab 3-2: Intersection
+	ArrayBag<ItemType> intersect(const ArrayBag& input) const;
+	//Lab 3-3: Intersection
+	ArrayBag<ItemType> bagDifference(const ArrayBag& input) const;
 }; // end ArrayBag
 
 #include "ArrayBag.cpp"

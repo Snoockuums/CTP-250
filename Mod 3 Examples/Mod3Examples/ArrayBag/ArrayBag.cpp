@@ -162,7 +162,21 @@ ArrayBag<ItemType> ArrayBag<ItemType>::bagUnion(const ArrayBag& input) const{
 	}
 	return theUnion;
 	}
-
+template<class ItemType>
+ArrayBag<ItemType> ArrayBag<ItemType>::intersect(const ArrayBag& input) const{
+	// declare a new ArrayBag that will hold the intersection
+	ArrayBag<ItemType> theIntersect;
+	for(int i=0; i<input.itemCount; i++)
+		for(int j=0; j<itemCount; j++)
+			if(input.items[i] == items[j]){
+				//add to intersection array
+				cout<<"There's a match: "<<items[j]<<endl;
+				theIntersect.items[theIntersect.itemCount] = items[j];
+				theIntersect.itemCount++;
+				cout<<"Item Count: "<<theIntersect.itemCount;
+			}
+	return theIntersect; 
+}
 // private
 template<class ItemType>
 int ArrayBag<ItemType>::getIndexOf(const ItemType& target) const
