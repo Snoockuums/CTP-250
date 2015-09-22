@@ -1,0 +1,251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C617BF3D1BB0A6FB00B16F04 /* ArrayBag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C617BF381BB0A6FB00B16F04 /* ArrayBag.cpp */; };
+		C617BF3E1BB0A6FB00B16F04 /* BagTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C617BF3B1BB0A6FB00B16F04 /* BagTester.cpp */; };
+		C617BF411BB0AF6700B16F04 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = C617BF401BB0AF6700B16F04 /* makefile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C617BF2C1BB0A6E800B16F04 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C617BF2E1BB0A6E800B16F04 /* BagArrayEx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BagArrayEx; sourceTree = BUILT_PRODUCTS_DIR; };
+		C617BF381BB0A6FB00B16F04 /* ArrayBag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrayBag.cpp; path = ../../ArrayBag.cpp; sourceTree = "<group>"; };
+		C617BF391BB0A6FB00B16F04 /* ArrayBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayBag.h; path = ../../ArrayBag.h; sourceTree = "<group>"; };
+		C617BF3A1BB0A6FB00B16F04 /* BagInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BagInterface.h; path = ../../BagInterface.h; sourceTree = "<group>"; };
+		C617BF3B1BB0A6FB00B16F04 /* BagTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BagTester.cpp; path = ../../BagTester.cpp; sourceTree = "<group>"; };
+		C617BF401BB0AF6700B16F04 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = makefile; path = ../../makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C617BF2B1BB0A6E800B16F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C617BF251BB0A6E800B16F04 = {
+			isa = PBXGroup;
+			children = (
+				C617BF301BB0A6E800B16F04 /* BagArrayEx */,
+				C617BF2F1BB0A6E800B16F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C617BF2F1BB0A6E800B16F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C617BF2E1BB0A6E800B16F04 /* BagArrayEx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C617BF301BB0A6E800B16F04 /* BagArrayEx */ = {
+			isa = PBXGroup;
+			children = (
+				C617BF381BB0A6FB00B16F04 /* ArrayBag.cpp */,
+				C617BF391BB0A6FB00B16F04 /* ArrayBag.h */,
+				C617BF401BB0AF6700B16F04 /* makefile */,
+				C617BF3A1BB0A6FB00B16F04 /* BagInterface.h */,
+				C617BF3B1BB0A6FB00B16F04 /* BagTester.cpp */,
+			);
+			path = BagArrayEx;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C617BF2D1BB0A6E800B16F04 /* BagArrayEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C617BF351BB0A6E800B16F04 /* Build configuration list for PBXNativeTarget "BagArrayEx" */;
+			buildPhases = (
+				C617BF2A1BB0A6E800B16F04 /* Sources */,
+				C617BF2B1BB0A6E800B16F04 /* Frameworks */,
+				C617BF2C1BB0A6E800B16F04 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BagArrayEx;
+			productName = BagArrayEx;
+			productReference = C617BF2E1BB0A6E800B16F04 /* BagArrayEx */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C617BF261BB0A6E800B16F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kylie Nicholson";
+				TargetAttributes = {
+					C617BF2D1BB0A6E800B16F04 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C617BF291BB0A6E800B16F04 /* Build configuration list for PBXProject "BagArrayEx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C617BF251BB0A6E800B16F04;
+			productRefGroup = C617BF2F1BB0A6E800B16F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C617BF2D1BB0A6E800B16F04 /* BagArrayEx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C617BF2A1BB0A6E800B16F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C617BF3D1BB0A6FB00B16F04 /* ArrayBag.cpp in Sources */,
+				C617BF3E1BB0A6FB00B16F04 /* BagTester.cpp in Sources */,
+				C617BF411BB0AF6700B16F04 /* makefile in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C617BF331BB0A6E800B16F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C617BF341BB0A6E800B16F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C617BF361BB0A6E800B16F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C617BF371BB0A6E800B16F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C617BF291BB0A6E800B16F04 /* Build configuration list for PBXProject "BagArrayEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C617BF331BB0A6E800B16F04 /* Debug */,
+				C617BF341BB0A6E800B16F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C617BF351BB0A6E800B16F04 /* Build configuration list for PBXNativeTarget "BagArrayEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C617BF361BB0A6E800B16F04 /* Debug */,
+				C617BF371BB0A6E800B16F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C617BF261BB0A6E800B16F04 /* Project object */;
+}
