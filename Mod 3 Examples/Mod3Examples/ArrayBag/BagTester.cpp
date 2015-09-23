@@ -29,10 +29,8 @@ int main()
  cout << "The initial bag is empty." << endl;
  bagTester(bag);
  bagTester2(bag2);
- //ArrayBag<string> unionResult = bag.bagUnion(bag2); 
- ArrayBag<string> intersectResult = bag.intersect(bag2); 
- //displayBag(unionResult);
- displayBag(intersectResult);
+ ArrayBag<string> unionResult = bag.bagUnion(bag2); 
+ displayBag(unionResult);
  //unionTester(bag, bag2);
  cout << "All done!" << endl;
 
@@ -84,7 +82,7 @@ void bagTester2(ArrayBag<string>& bag)
  << "; should be 1 (true)" << endl;
  displayBag(bag);
 
- string items[] = {"one", "B", "C", "D", "E", "F"};
+ string items[] = {"A", "B", "C", "D", "E", "F"};
  cout << "Add 6 items to the bag: " << endl;
  for (int i = 0; i < 6; i++)
  {

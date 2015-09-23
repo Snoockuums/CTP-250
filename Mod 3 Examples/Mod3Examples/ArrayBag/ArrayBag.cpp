@@ -162,6 +162,7 @@ ArrayBag<ItemType> ArrayBag<ItemType>::bagUnion(const ArrayBag& input) const{
 	}
 	return theUnion;
 	}
+<<<<<<< HEAD
 template<class ItemType>
 ArrayBag<ItemType> ArrayBag<ItemType>::intersect(const ArrayBag& input) const{
 	// declare a new ArrayBag that will hold the intersection
@@ -209,6 +210,9 @@ ArrayBag<ItemType> ArrayBag<ItemType>::intersect(const ArrayBag& input) const{
 	}
 	return theIntersect; 
 }
+=======
+
+>>>>>>> parent of de04bb1... Intersect works but double adds.
 // private
 template<class ItemType>
 int ArrayBag<ItemType>::getIndexOf(const ItemType& target) const
