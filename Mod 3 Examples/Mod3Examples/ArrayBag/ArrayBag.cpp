@@ -166,15 +166,47 @@ template<class ItemType>
 ArrayBag<ItemType> ArrayBag<ItemType>::intersect(const ArrayBag& input) const{
 	// declare a new ArrayBag that will hold the intersection
 	ArrayBag<ItemType> theIntersect;
-	for(int i=0; i<input.itemCount; i++)
-		for(int j=0; j<itemCount; j++)
+	ArrayBag<ItemType> tracker; 
+	// ItemType tracker[20];
+	//int trackerCount = 0;
+	for(int i=0; i<input.itemCount; i++){
+		for(int j=0; j<itemCount; j++){
+			bool exists = false; 
 			if(input.items[i] == items[j]){
-				//add to intersection array
 				cout<<"There's a match: "<<items[j]<<endl;
-				theIntersect.items[theIntersect.itemCount] = items[j];
-				theIntersect.itemCount++;
-				cout<<"Item Count: "<<theIntersect.itemCount;
+				//check to see if item has already been matched
+				for(int m=0; m<tracker.itemCount; m++){
+					if(tracker.items[m] == items[j]) // item already exists in tracker
+						//skip this item
+						exists = true;
+				}
+				if(!exists){
+					tracker.items[tracker.itemCount] = items[j];
+					tracker.itemCount++;
+					cout<<"Value added to tracker: "<<items[j]<<endl;
+				} 
 			}
+		}
+	}
+	//end for loops
+	
+	for(int j=0; j<trackerCount; j++)
+		cout<<"trackerCount: "<<trackerCount<<"Value: "<<tracker[trackerCount]<<endl;
+	for(int i=0; i<trackerCount; i++){
+		// count frequency of this item in first array
+		int countMain = getFrequencyOf(tracker[trackerCount]);
+		// count frequency of this item in second array
+		int countInput = input.getFrequencyOf(tracker[trackerCount]);
+		//compare frequencies
+		int smaller = min(countMain, countInput); 
+		// add this number of entries to the intersect array
+		cout<<"The min number of instances of entry "<< tracker[trackerCount]<<"is "<<smaller
+		<<". "<<endl; 
+		for(int k=0; k<smaller; k++){
+			theIntersect.add(items[i]);
+			cout<<"Added item "<<k<<endl;
+		}
+	}
 	return theIntersect; 
 }
 // private
